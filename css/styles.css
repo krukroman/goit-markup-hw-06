@@ -598,7 +598,7 @@ body {
 .footer-socials-list-link:focus {
   background: var(--accent-color);
 }
-.footer-form {
+.footer-form-container {
   display: block;
   width: 570px;
   margin: 0 0 0 auto;
@@ -612,7 +612,7 @@ body {
   text-transform: uppercase;
   color: var(--main-bg-color);
 }
-.footer-form-container {
+.footer-form {
   display: flex;
   align-items: center;
 }
