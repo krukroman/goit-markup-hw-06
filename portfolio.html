@@ -1,308 +1,374 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Шапка -->
     <header class="header">
-        <!-- Логотип-посилання -->
-        <div class="container header-container">
-            <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-            <!-- Навігаційна панель посиланнь -->
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-link current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- список посиланнь на контакти -->
-            <ul class="header-contacts-list">
-                <li class="header-contacts-list-item">
-                    <a class="header-contacts-link" href="mailto:info@devstudio.com">
-                        <svg class="header-contacts-link-icon" width="16" height="12">
-                            <use href="./images/icons/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="header-contacts-list-item">
-                    <a class="header-contacts-link" href="tel:+380961111111">
-                        <svg class="header-contacts-link-icon" width="10" height="16">
-                            <use href="./images/icons/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <!-- Логотип-посилання -->
+      <div class="container header-container">
+        <a class="logo" href="./index.html"
+          ><span class="logo-span">Web</span>Studio</a
+        >
+        <!-- Навігаційна панель посиланнь -->
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a class="navigation-list-link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- список посиланнь на контакти -->
+        <ul class="header-contacts-list">
+          <li class="header-contacts-list-item">
+            <a class="header-contacts-link" href="mailto:info@devstudio.com">
+              <svg class="header-contacts-link-icon" width="16" height="12">
+                <use href="./images/icons/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts-list-item">
+            <a class="header-contacts-link" href="tel:+380961111111">
+              <svg class="header-contacts-link-icon" width="10" height="16">
+                <use href="./images/icons/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Головний контент сторінки Портфоліо -->
     <main>
-        <!-- Секція-Список фільтрів -->
-        <section class="section section-portfolio">
-            <div class="container">
-                <h1 class="visually-hidden">Портфолио</h1>
-                <h2 class="visually-hidden">Фильтры</h2>
-                <ul class="filter-list">
-                    <li class="filter-list-item">
-                        <button type="button" class="filter-list-button">Все</button>
-                    </li>
-                    <li class="filter-list-item">
-                        <button type="button" class="filter-list-button">Веб-сайты</button>
-                    </li>
-                    <li class="filter-list-item">
-                        <button type="button" class="filter-list-button">Приложения</button>
-                    </li>
-                    <li class="filter-list-item">
-                        <button type="button" class="filter-list-button">Дизайн</button>
-                    </li>
-                    <li class="filter-list-item">
-                        <button type="button" class="filter-list-button">Маркетинг</button>
-                    </li>
-                </ul>
-                <h2 class="visually-hidden">Нашы продукты</h2>
-                <ul class="products-list">
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-1.jpg"
-                                    alt="Сайт на экране ноутбука" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Технокряк это современная площадка распространения коронавируса.
-                                    Компании используют эту платформу для цифрового шпионажа и атак на
-                                    защищённые сервера конкурентов.
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Технокряк</h3>
-                                <p class="products-list-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-2.jpg"
-                                    alt="Игра в баскетбол" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Постер New Orlean vs Golden Star</h3>
-                                <p class="products-list-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-3.jpg"
-                                    alt="Логотип ресторана морской еды" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Ресторан Seafood</h3>
-                                <p class="products-list-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-4.jpg"
-                                    alt="Чорные беспроводные наушники" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Проект Prime</h3>
-                                <p class="products-list-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-5.jpg"
-                                    alt="Большая белая коробка и маленькая коричневая коробка" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Проект Boxes</h3>
-                                <p class="products-list-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-6.jpg"
-                                    alt="Сайт на экране монитора" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Inspiration has no Borders</h3>
-                                <p class="products-list-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-7.jpg"
-                                    alt="Пример дизайна на развороте книги" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Издание Limited Edition</h3>
-                                <p class="products-list-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-8.jpg"
-                                    alt="Бирка с названием" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Проект LAB</h3>
-                                <p class="products-list-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a class="products-list-link" href="">
-                            <div class="products-list-thumb">
-                                <img class="products-list-img" src="./images/portfolio/products/product-9.jpg"
-                                    alt="процес работы над дизайном на ноутбуке" width="370" height="294">
-                                <p class="products-list-overlay">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Voluptas cumque blanditiis praesentium et aliquam error dolor,
-                                    voluptatum molestiae magnam?
-                                </p>
-                            </div>
-                            <div class="products-list-description-container">
-                                <h3 class="products-list-title">Growing Business</h3>
-                                <p class="products-list-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- Секція-Список фільтрів -->
+      <section class="section section-portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <h2 class="visually-hidden">Фильтры</h2>
+          <ul class="filter-list">
+            <li class="filter-list-item">
+              <button type="button" class="filter-list-button">Все</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-list-button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-list-button">
+                Приложения
+              </button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-list-button">Дизайн</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-list-button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <h2 class="visually-hidden">Нашы продукты</h2>
+          <ul class="products-list">
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-1.jpg"
+                    alt="Сайт на экране ноутбука"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">Технокряк</h3>
+                  <p class="products-list-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-2.jpg"
+                    alt="Игра в баскетбол"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="products-list-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-3.jpg"
+                    alt="Логотип ресторана морской еды"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">Ресторан Seafood</h3>
+                  <p class="products-list-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-4.jpg"
+                    alt="Чорные беспроводные наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">Проект Prime</h3>
+                  <p class="products-list-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-5.jpg"
+                    alt="Большая белая коробка и маленькая коричневая коробка"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">Проект Boxes</h3>
+                  <p class="products-list-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-6.jpg"
+                    alt="Сайт на экране монитора"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="products-list-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-7.jpg"
+                    alt="Пример дизайна на развороте книги"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">Издание Limited Edition</h3>
+                  <p class="products-list-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-8.jpg"
+                    alt="Бирка с названием"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">Проект LAB</h3>
+                  <p class="products-list-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-list-item">
+              <a class="products-list-link" href="">
+                <div class="products-list-thumb">
+                  <img
+                    class="products-list-img"
+                    src="./images/portfolio/products/product-9.jpg"
+                    alt="процес работы над дизайном на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="products-list-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptas cumque blanditiis praesentium et aliquam error
+                    dolor, voluptatum molestiae magnam?
+                  </p>
+                </div>
+                <div class="products-list-description-container">
+                  <h3 class="products-list-title">Growing Business</h3>
+                  <p class="products-list-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-address-container">
-                <!-- Логотип-посилання -->
-                <a class="footer-logo" href="./index.html">
-                    <span class="logo-span">Web</span>Studio
+      <div class="container footer-container">
+        <div class="footer-address-container">
+          <!-- Логотип-посилання -->
+          <a class="footer-logo" href="./index.html">
+            <span class="logo-span">Web</span>Studio
+          </a>
+          <!-- Контакти -->
+          <address class="footer-address">
+            <!-- Поки список посиланнь на контакти -->
+            <ul class="footer-address-list">
+              <li class="footer-address-list-item">
+                <p class="footer-address-list-text">
+                  г. Киев, пр-т Леси Украинки, 26
+                </p>
+              </li>
+              <li class="footer-address-list-item">
+                <a
+                  class="footer-address-contacts-link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
                 </a>
-                <!-- Контакти -->
-                <address class="footer-address">
-                    <!-- Поки список посиланнь на контакти -->
-                    <ul class="footer-address-list">
-                        <li class="footer-address-list-item">
-                            <p class="footer-address-list-text">
-                                г. Киев, пр-т Леси Украинки, 26
-                            </p>
-                        </li>
-                        <li class="footer-address-list-item">
-                            <a class="footer-address-contacts-link" href="mailto:info@devstudio.com">
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="footer-address-list-item">
-                            <a class="footer-address-contacts-link" href="tel:+380961111111">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="footer-socials-container">
-                <p class="footer-socials-title">присоединяйтесь</p>
-                <ul class="footer-socials-list">
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-list-link">
-                            <svg class="footer-socials-list-icon" width="20" height="20">
-                                <use href="./images/icons/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-list-link">
-                            <svg class="footer-socials-list-icon" width="20" height="20">
-                                <use href="./images/icons/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-list-link">
-                            <svg class="footer-socials-list-icon" width="20" height="20">
-                                <use href="./images/icons/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-list-link">
-                            <svg class="footer-socials-list-icon" width="20" height="20">
-                                <use href="./images/icons/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+              </li>
+              <li class="footer-address-list-item">
+                <a
+                  class="footer-address-contacts-link"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
         </div>
+        <div class="footer-socials-container">
+          <p class="footer-socials-title">присоединяйтесь</p>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-list-item">
+              <a href="" class="footer-socials-list-link">
+                <svg class="footer-socials-list-icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-list-item">
+              <a href="" class="footer-socials-list-link">
+                <svg class="footer-socials-list-icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-list-item">
+              <a href="" class="footer-socials-list-link">
+                <svg class="footer-socials-list-icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-list-item">
+              <a href="" class="footer-socials-list-link">
+                <svg class="footer-socials-list-icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
