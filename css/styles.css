@@ -10,6 +10,14 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -185,13 +193,6 @@ body {
 /* Секція-Переваги */
 .section.section-advantages {
   padding: 94px 0 47px 0;
-}
-.visualy-hidden-title {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }
 .advantages-list {
   list-style: none;
@@ -597,6 +598,56 @@ body {
 .footer-socials-list-link:focus {
   background: var(--accent-color);
 }
+.footer-form {
+  display: block;
+  width: 570px;
+  margin: 0 0 0 auto;
+}
+.footer-form-title {
+  display: block;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+.footer-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-form-input {
+  display: block;
+  padding: 15px 16px;
+  width: 100%;
+  margin: 0 12px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer.footer-form-input:placeholder-shown {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-button {
+  margin: 0;
+  padding: 10px 28px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.footer-form-button-icon {
+  display: block;
+  margin: 0 0 0 10px;
+}
 /* Бекдроп */
 .backdrop {
   position: fixed;
@@ -630,11 +681,11 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Форма */
-.form {
+.modal-form {
   margin: 0;
   padding: 40px;
 }
-.form-title {
+.modal-form-title {
   display: block;
   margin: 0 0 12px 0;
   font-size: 20px;
@@ -642,27 +693,27 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.form-field {
+.modal-form-field {
   position: relative;
   display: flex;
   margin: 0 0 10px 0;
   flex-direction: column;
 }
-.form-label {
+.modal-form-label {
   margin: 0 0 4px 0;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
-.form-input {
+.modal-form-input {
   height: 40px;
   padding: 0 0 0 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-icon {
+.modal-form-icon {
   position: absolute;
   display: block;
   top: 29px;
@@ -670,10 +721,10 @@ body {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field-comment {
+.modal-form-field-comment {
   margin: 0 0 20px 0;
 }
-.form-text-area {
+.modal-form-text-area {
   display: block;
   resize: none;
   height: 120px;
@@ -682,20 +733,43 @@ body {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-text-area:placeholder-shown {
+.modal-form-text-area:placeholder-shown {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-field-checkbox {
+.modal-form-field-checkbox {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0px 0 30px 0;
-  padding: 0 13px;
+  padding: 0 12px;
 }
-.chackbox-label {
+.modal-form-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+}
+.modal-form-checkbox-icon {
+  display: block;
+  height: 15px;
+  width: 16px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+  margin: 0 7px 0 0;
+}
+.modal-form-checkbox:checked + .modal-form-checkbox-icon {
+  border: transparent;
+  background-color: var(--accent-color);
+  background-image: url(../images/icons/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+.modal-form-chackbox-label {
   display: block;
   margin: 0;
   font-size: 14px;
@@ -703,24 +777,24 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.checkbox-link {
+.modal-form-checkbox-link {
   color: var(--accent-color);
 }
-.form-field:hover .form-input {
+.modal-form-field:hover .modal-form-input {
   border: 1px solid var(--accent-color);
 }
-.form-field:hover .form-icon {
+.modal-form-field:hover .modal-form-icon {
   fill: var(--accent-color);
 }
-.form-input:focus,
-.form-text-area:focus {
+.modal-form-input:focus,
+.modal-form-text-area:focus {
   border: 1px solid var(--accent-color);
   outline: transparent;
 }
-.form-input:focus ~ .form-icon {
+.modal-form-input:focus ~ .modal-form-icon {
   fill: var(--accent-color);
 }
-.form-submit-button {
+.modal-form-submit-button {
   padding: 10px 55px;
 }
 /* Кнопка "закрити" */
